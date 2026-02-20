@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Jose & Abigail — 20.03.2026</title>
+  <meta name="description" content="Te invitamos a celebrar nuestro amor. Jose & Abigail, 20 de Marzo de 2026.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:title" content="Jose & Abigail — Nuestra Boda">
+  <meta property="og:description" content="Te invitamos a ser parte de este día tan especial. 20 de Marzo de 2026.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Pinyon+Script&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="locked">
+  <!-- Background Music -->
+  <audio id="bg-music" src="cancion.mp3" loop preload="auto"></audio>
+
+  <!-- Particle Layer -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Confetti Layer -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ================================
+       SECTION 1: ENTRANCE (THE ENVELOPE)
+       ================================ -->
+  <section id="entrance" aria-label="Bienvenida">
+    <div class="envelope-wrapper">
+      <div class="envelope">
+        <div class="envelope-top-flap"></div>
+        <div class="envelope-body">
+          <div class="envelope-letter">
+            <span class="letter-monogram">J&A</span>
+          </div>
+        </div>
+        <div class="envelope-seal">J&A</div>
+      </div>
+    </div>
+    <span class="entrance-cta">Romper Sello para Abrir</span>
+  </section>
+
+  <!-- ================================
+       MAIN CONTENT
+       ================================ -->
+  <main id="main-content">
+
+    <!-- SECTION 2: NAMES -->
+    <section id="names" class="section" aria-label="Los Novios">
+      <div class="names-bg">
+        <img src="opt_imgs/IMG_0976_2.JPG" alt="" />
+        <div class="names-bg-overlay"></div>
+      </div>
+
+      <div class="names-content">
+        <span class="names-preline">La Boda de</span>
+        <h1 class="names-container">
+          <span class="names-name names-gold">Jose</span>
+          <span class="names-ampersand names-gold">&</span>
+          <span class="names-name names-gold">Abigail</span>
+        </h1>
+        <p class="names-date">20 de Marzo de 2026</p>
+        <p class="names-location">Arkansas, Estados Unidos</p>
+        <div class="names-divider"></div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 3: OUR STORY -->
+    <section id="story" class="section" aria-label="Nuestra Historia">
+      <h2 class="story-title reveal">Nuestra Historia</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-emoji"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path
+                d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z">
+              </path>
+              <path d="M22 12H2"></path>
+              <path
+                d="M12 22C14.5013 22 17 17.5228 17 12C17 6.47715 14.5013 2 12 2C9.49873 2 7 6.47715 7 12C7 17.5228 9.49873 22 12 22Z">
+              </path>
+            </svg></div>
+          <span class="timeline-year">El Comienzo</span>
+          <h3 class="timeline-heading">Dos Corazones, Un Mismo Sueño</h3>
+          <p class="timeline-text">Desde su amada Honduras (Lluvia de Peces) y El Salvador, el destino, a través de
+            familias, música y fe, ya estaba escribiendo nuestra historia.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-emoji"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path
+                d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z">
+              </path>
+            </svg></div>
+          <span class="timeline-year">Cuando Éramos Jóvenes</span>
+          <h3 class="timeline-heading">El Destino Nos Unió</h3>
+          <p class="timeline-text">Nos conocimos siendo muy jóvenes. Entre acordes de música, charlas sinceras y un amor
+            por las tortugas marinas, supimos que algo especial nacía.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-emoji"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg></div>
+          <span class="timeline-year">7 Años Juntos</span>
+          <h3 class="timeline-heading">Amor Que Crece Cada Día</h3>
+          <p class="timeline-text">Siete años de risas, metas de negocios, componer nuestra propia melodía y superar
+            cada obstáculo tomados de la mano.</p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-emoji"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5">
+              <path d="M7 11a5 5 0 0 1 10 0v1h-10v-1z"></path>
+              <path d="M12 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+              <path d="M3 12h18v8a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-8z"></path>
+            </svg></div>
+          <span class="timeline-year">21 de Septiembre, 2025</span>
+          <h3 class="timeline-heading">La Pregunta</h3>
+          <p class="timeline-text">Llegó el momento que ambos esperábamos. Una rodilla en el suelo, y la pregunta más
+            importante...</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 4: THE PROPOSAL (VHS VIDEO) -->
+    <section id="proposal" class="section" aria-label="La Propuesta">
+      <span class="proposal-date-label reveal">21 de Septiembre</span>
+      <h2 class="proposal-date reveal reveal-delay-1">2025</h2>
+      <div class="proposal-video-container reveal reveal-delay-2">
+        <video id="proposal-video" src="propuesta.mp4" controls playsinline preload="metadata"
+          poster="opt_imgs/IMG_0975.JPG"></video>
+      </div>
+      <p class="proposal-answer reveal reveal-delay-3">Ella dijo que <span class="gold-text">SÍ</span></p>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 5: SAVE THE DATE -->
+    <section id="save-the-date" class="section" aria-label="Guarda la Fecha">
+      <h2 class="std-title reveal">Guarda la Fecha</h2>
+      <p class="std-date-big reveal reveal-delay-1">20</p>
+      <p class="std-date-month reveal reveal-delay-2">Marzo</p>
+      <p class="std-date-year reveal reveal-delay-2">2026</p>
+
+      <div class="countdown reveal reveal-delay-3" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-days">--</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-hours">--</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-mins">--</span>
+          <span class="countdown-label">Min</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-secs">--</span>
+          <span class="countdown-label">Seg</span>
+        </div>
+      </div>
+
+      <!-- March 2026 Calendar -->
+      <div class="calendar reveal reveal-delay-4">
+        <div class="calendar-header">Marzo 2026</div>
+        <div class="calendar-weekdays">
+          <span class="calendar-weekday">D</span>
+          <span class="calendar-weekday">L</span>
+          <span class="calendar-weekday">M</span>
+          <span class="calendar-weekday">M</span>
+          <span class="calendar-weekday">J</span>
+          <span class="calendar-weekday">V</span>
+          <span class="calendar-weekday">S</span>
+        </div>
+        <div class="calendar-days">
+          <span class="calendar-day">1</span>
+          <span class="calendar-day">2</span>
+          <span class="calendar-day">3</span>
+          <span class="calendar-day">4</span>
+          <span class="calendar-day">5</span>
+          <span class="calendar-day">6</span>
+          <span class="calendar-day">7</span>
+          <span class="calendar-day">8</span>
+          <span class="calendar-day">9</span>
+          <span class="calendar-day">10</span>
+          <span class="calendar-day">11</span>
+          <span class="calendar-day">12</span>
+          <span class="calendar-day">13</span>
+          <span class="calendar-day">14</span>
+          <span class="calendar-day">15</span>
+          <span class="calendar-day">16</span>
+          <span class="calendar-day">17</span>
+          <span class="calendar-day">18</span>
+          <span class="calendar-day">19</span>
+          <span class="calendar-day highlight">20</span>
+          <span class="calendar-day">21</span>
+          <span class="calendar-day">22</span>
+          <span class="calendar-day">23</span>
+          <span class="calendar-day">24</span>
+          <span class="calendar-day">25</span>
+          <span class="calendar-day">26</span>
+          <span class="calendar-day">27</span>
+          <span class="calendar-day">28</span>
+          <span class="calendar-day">29</span>
+          <span class="calendar-day">30</span>
+          <span class="calendar-day">31</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 6: DETAILS -->
+    <section id="details" class="section" aria-label="Detalles">
+      <h2 class="details-title reveal">Ceremonia Civil</h2>
+      <div class="details-cards">
+        <div class="detail-card reveal reveal-delay-1">
+          <div class="detail-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg></div>
+          <span class="detail-card-label">Lugar</span>
+          <p class="detail-card-value">City Hall</p>
+          <p class="detail-card-sub">Arkansas, Estados Unidos</p>
+        </div>
+        <div class="detail-card reveal reveal-delay-2">
+          <div class="detail-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5">
+              <path d="M3 21h18"></path>
+              <path d="M4 21v-4"></path>
+              <path d="M20 21v-4"></path>
+              <path d="M12 21v-4"></path>
+              <path d="M8 21v-4"></path>
+              <path d="M16 21v-4"></path>
+              <path d="M3 13h18"></path>
+              <path d="M4 13V9l8-5 8 5v4"></path>
+            </svg></div>
+          <span class="detail-card-label">Ceremonia</span>
+          <p class="detail-card-value">11:00 AM</p>
+          <p class="detail-card-sub">Boda Civil</p>
+        </div>
+        <div class="detail-card reveal reveal-delay-3">
+          <div class="detail-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5">
+              <path d="M6 14s.5 2 3 2 3-2 3-2V2H6v12Z"></path>
+              <line x1="9" y1="16" x2="9" y2="22"></line>
+              <line x1="6" y1="22" x2="12" y2="22"></line>
+              <path d="M18 14s.5 2 3 2 3-2 3-2V2H18v12Z"></path>
+              <line x1="21" y1="16" x2="21" y2="22"></line>
+              <line x1="18" y1="22" x2="24" y2="22"></line>
+            </svg></div>
+          <span class="detail-card-label">Celebración</span>
+          <p class="detail-card-value">12:00 PM</p>
+          <p class="detail-card-sub">Almuerzo</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 7: GRATITUDE -->
+    <section id="gratitude" class="section" aria-label="Gratitud">
+      <div class="gratitude-cross reveal">✝</div>
+      <h2 class="gratitude-title reveal reveal-delay-1">Gratitud</h2>
+      <div class="gratitude-text">
+        <p class="reveal reveal-delay-2">Antes que nada, le damos gracias a Dios por cada paso de este camino. Por
+          habernos unido desde jóvenes, por sostenernos durante siete años de amor, y por abrirnos las puertas a este
+          nuevo capítulo de nuestras vidas.</p>
+        <p class="reveal reveal-delay-3">A nuestros padres, que con su sacrificio nos trajeron a esta tierra y nos
+          enseñaron el valor del amor verdadero.</p>
+        <p class="reveal reveal-delay-4">A nuestros hermanos, que siempre han estado ahí para nosotros, en las buenas y
+          en las malas.</p>
+        <p class="reveal reveal-delay-5">Esta invitación la hacemos con todo el corazón, porque en este día tan especial
+          queremos estar rodeados únicamente de las personas que de verdad amamos.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 8: GALLERY -->
+    <section id="gallery" class="section" aria-label="Galería">
+      <h2 class="gallery-title reveal">Momentos</h2>
+      <div class="gallery-track" id="gallery-track">
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0985.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0950.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0953.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0961.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0965.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0957.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0981.JPG" alt="Jose y Abigail"></div>
+        <div class="gallery-item reveal"><img src="opt_imgs/IMG_0986_2.JPG" alt="Jose y Abigail"></div>
+      </div>
+      <div class="gallery-dots" id="gallery-dots">
+        <span class="gallery-dot active"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- SECTION 9: FINALE -->
+    <section id="finale" class="section" aria-label="Final">
+      <span class="finale-top-text reveal">Con la bendición de Dios</span>
+      <h2 class="finale-heading reveal reveal-delay-1">Los Esperamos</h2>
+      <p class="finale-subtext reveal reveal-delay-2">Con todo nuestro amor,</p>
+      <p class="finale-names reveal reveal-delay-3">Jose & Abigail</p>
+      <p class="finale-date reveal reveal-delay-4">20 · 03 · 2026</p>
+      <span class="finale-hashtag reveal reveal-delay-5">#JoseYAbigail</span>
+
+      <div class="finale-hearts" id="finale-hearts" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- App -->
+  <script src="script.js"></script>
+</body>
+
+</html>
