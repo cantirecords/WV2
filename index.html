@@ -26,6 +26,21 @@
   <!-- Background Music -->
   <audio id="bg-music" src="cancion.mp3" loop preload="auto"></audio>
 
+  <!-- Floating Audio Controls -->
+  <button id="audio-toggle" class="audio-toggle" aria-label="Alternar música">
+    <div class="icon-music-on">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+      </svg>
+    </div>
+    <div class="icon-music-off" style="display: none;">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path
+          d="M4.27 3L3 4.27l9 9v.28c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4v-.55l6.73 6.73L21 20.73 4.27 3zM12 7h4V3h-6v1.27l2 2V7z" />
+      </svg>
+    </div>
+  </button>
+
   <!-- Particle Layer -->
   <canvas id="particles-canvas"></canvas>
 
@@ -147,7 +162,7 @@
       <span class="proposal-date-label reveal">21 de Septiembre</span>
       <h2 class="proposal-date reveal reveal-delay-1">2025</h2>
       <div class="proposal-video-container reveal reveal-delay-2">
-        <video id="proposal-video" src="propuesta.mp4" controls playsinline preload="metadata"
+        <video id="proposal-video" src="propuesta.mp4" playsinline autoplay loop muted preload="metadata"
           poster="opt_imgs/IMG_0975.JPG"></video>
       </div>
       <p class="proposal-answer reveal reveal-delay-3">Ella dijo que <span class="gold-text">SÍ</span></p>

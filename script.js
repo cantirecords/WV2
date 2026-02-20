@@ -24,6 +24,41 @@
   const cCtx = confettiCanvas.getContext('2d');
 
   /* ----------------------------------------
+     AUDIO TOGGLE
+     ---------------------------------------- */
+  function initAudioToggle() {
+    const btn = document.getElementById('audio-toggle');
+    const audio = document.getElementById('bg-music');
+    const iconOn = btn.querySelector('.icon-music-on');
+    const iconOff = btn.querySelector('.icon-music-off');
+
+    if (!btn || !audio) return;
+
+    btn.classList.add('visible');
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().catch(e => console.log('Playback error:', e));
+        iconOn.style.display = 'block';
+        iconOff.style.display = 'none';
+      } else {
+        audio.pause();
+        iconOn.style.display = 'none';
+        iconOff.style.display = 'block';
+      }
+    });
+
+    // Check initial state (it should be playing from handleEntrance)
+    if (!audio.paused) {
+      iconOn.style.display = 'block';
+      iconOff.style.display = 'none';
+    } else {
+      iconOn.style.display = 'none';
+      iconOff.style.display = 'block';
+    }
+  }
+
+  /* ----------------------------------------
      UTILITIES
      ---------------------------------------- */
   function rand(min, max) { return Math.random() * (max - min) + min; }
@@ -187,6 +222,7 @@
       initCountdown();
       initGalleryDots();
       initFloatingHearts();
+      initAudioToggle();
     }, 1800);
   }
 

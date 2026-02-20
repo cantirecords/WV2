@@ -84,6 +84,47 @@ body::after {
   pointer-events: none;
 }
 
+/* --- Floating Audio Toggle --- */
+.audio-toggle {
+  position: fixed;
+  bottom: 32px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: all 0.4s var(--ease);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.audio-toggle.visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.audio-toggle:active {
+  transform: scale(0.9);
+}
+
+.audio-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
 /* --- Section Base --- */
 .section {
   position: relative;
